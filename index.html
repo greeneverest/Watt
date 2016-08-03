@@ -15,6 +15,11 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		
+		<!-- Custom CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<!-- Modernizer -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
 	
 		<style>
@@ -31,38 +36,35 @@
 	
 	<body>
 	<!-- <div id="gmap" style="width:500px;height:380px;"></div> -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-   	    <div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-		<a href="" class="navbar-brand" href="#">Ally Energy</a>
-	   </div>
 		
-		<div class="collapse navbar-collapse" id="navbar-collapse">
-			<ul class="nav navbar-nav">
-			 <li class="active"><a href="#">Who We Are</a></li>
-			 <li class="active"><a href="#">Efficiency Solutions</a></li>
-			 <li class="active"><a href="#">The Energy Experts</a></li>
-			 <li class="active"><a href="#">News</a></li>
-			 <li class="active"><a href="#">FAQS</a></li>
-			</ul>
-		</div>
-	</div>
-</nav><!.. End Navbar ..>
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="" class="navbar-brand" href="#">Ally Energy</a>
+				</div><!-- End navbar-header -->
+		
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav">
+						 <li class="active"><a href="#">Who We Are</a></li>
+						 <li class="active"><a href="#">Efficiency Solutions</a></li>
+						 <li class="active"><a href="#">The Energy Experts</a></li>
+						 <li class="active"><a href="#">News</a></li>
+						 <li class="active"><a href="#">FAQS</a></li>
+					</ul>
+				</div><!-- End navbar-collapse -->
+			</div><!-- End container -->
+		</nav><!-- End Navbar -->
 
 	
 	
-	<!.. Images ..>
-	<div class="container">	
-		<section>
-		
-			<div class="page-header" id="gallery">
-			</div>
+	<!-- Corousel -->
+	
 			
 			<div class="carousel slide" id="screenshot-carousel" data-ride="carousel" color="black">
 				<ol class= "carousel-indicators">
@@ -72,24 +74,29 @@
 					<li data-target="#screenshot-carousel" data-slide-to="3"></li>
 				</ol>
 			  <div class="carousel-inner">
-				<div class="item active">
+				<div class="item active" id="slide1">
 					<img src="http://4.bp.blogspot.com/-8ObGenvwRCM/UbZPXtlVbEI/AAAAAAAAAeo/EGxjiR2LDLs/s1600/energysol-logo.jpg" alt="Ally Energy">
 				</div>
-				<div class="item">
+				<div class="item" id="slide2">
 					<img src="http://4.bp.blogspot.com/-8ObGenvwRCM/UbZPXtlVbEI/AAAAAAAAAeo/EGxjiR2LDLs/s1600/energysol-logo.jpg" alt="Ally Energy">
 				</div>
-				<div class="item">
+				<div class="item" id="slide3">
 					<img src="http://4.bp.blogspot.com/-8ObGenvwRCM/UbZPXtlVbEI/AAAAAAAAAeo/EGxjiR2LDLs/s1600/energysol-logo.jpg" alt="Ally Energy">
 				</div>
-				<div class="item">
+				<div class="item" id="slide4">
 					<img src="http://4.bp.blogspot.com/-8ObGenvwRCM/UbZPXtlVbEI/AAAAAAAAAeo/EGxjiR2LDLs/s1600/energysol-logo.jpg" alt="Ally Energy">
 				</div>
 			
 			  </div>
-			</div><!.. End Corousel ..>
-		</section>
-	</div>
+			  
+			 <!-- Controls -->
+			<a class="left carousel-control" data-slide="prev" href="#screenshot-carousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#screenshot-carousel"><span class="icon-next"></span></a>
+
+			</div><!-- End Corousel -->
+		
 	
+		
 	
 	<br>
 	
@@ -103,21 +110,109 @@
 			
 			<p class="lead">Some Text</p>
 			
-			</div><!.. End well ..>
+			</div><!-- End well -->
 		
-		</div><!.. End Col ..>
-	</div><!.. Enf firstSection ..>
+		</div><!-- End Col -->
+	</div><!-- Enf firstSection -->
 	
 	
-	<div class="jambotron">
-		<div class="container text-center">
-			 <h1><br> Ally Energy</h1>
-			 <p>....</p>
-			  
-			  
-		</div>
-	</div><!.. End Header ..>
 	
+	
+	
+	<div class="row" id="featuresHeading">
+		<div class="col-12">
+			<h2>Why it pays to be precise</h2>
+			<p class="lead">Ally Energy Solutions</p>
+		</div><!-- end col-12 -->
+	</div><!-- end featuresHeading -->
+
+	
+	<div class="row" id="features">
+		<div class="col-sm-4 feature">
+			<div class="panel">
+				<div class="panel-heading">
+					<h3 class="panel-title">IN THE WORLD OF ENERGY EFFICIENCY</h3>
+				</div><!-- end panel-heading -->
+				<img src="" alt="Efficiency" class="img-circle">
+				
+				<p>leaving one stone unturned could cost millions. 
+				   Find out how our unmatched industry precision
+				   can pay off for you.</p>
+				
+				<a href="" target="_blank" class="btn btn-warning btn-block">VIEW SERVICES</a>
+			</div><!-- end panel -->
+		</div><!-- end feature -->
+	
+	<div class="col-sm-4 feature">
+		<div class="panel">
+			<div class="panel-heading">
+				<h3 class="panel-title">THE NAME SAYS IT ALL</h3>
+			</div><!-- end panel-heading -->
+				<img src="" alt="Ally Solutions" class="img-circle">
+				
+				<p><b>WE’RE NOT INTERESTED IN BEING YOUR REGULAR ENERGY EFFICIENCY COMPANY.</b> 
+				      We want to be your energy efficiency ally. To us, that means sitting on the 
+					  client’s side of the table, operating with full objectivity as an independent 
+					  and trusted resource, with no affiliations to any manufacturer or product line. 
+					  We deliver an unbiased approach to energy efficiency – and we do it in the best 
+					  way possible for our clients: in their best interest.</p>
+				
+				<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-danger btn-block">More Info</a>
+		</div><!-- end panel -->
+	</div><!-- end feature -->
+	
+	
+	<div class="col-sm-4 feature">
+		<div class="panel">
+			<div class="panel-heading">
+				<h3 class="panel-title">MAKING ENERGY EFFICIENCY EVEN MORE EFFICIENT</h3>
+			</div><!-- end panel-heading -->
+				<img src="" alt="Efficient" class="img-circle">
+				
+				<p><b>SHOULDN’T THE APPROACH TO IMPROVE ENERGY EFFICIENCY BE EFFICIENT?</b>
+				We think so. That’s why we let you do what you do best – run your business – while 
+				we use the absolute best resources to handle the rest: 
+				thorough and accurate facility audits; well-thought-out plans; 
+				best-in-class, customized implementations; and optimized rebate and utility documentation, 
+				measurement, and verification requirements.
+				</p>
+				
+				<a href="http://getbootstrap.com/" target="_blank" class="btn btn-info btn-block">More Bootstrap</a>
+		</div><!-- end panel -->
+	</div><!-- end feature -->
+	
+	</div><!-- end features -->
+	
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2"
+				<h6>Copyright ..........</h6>
+				</div><!-- end col-sm-2 -->
+				
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Location</a></li>
+						</ul>
+				</div><!-- End col-sm-2 -->
+				
+				<div class="col-sm-2">
+					<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+				</div><!-- end col-sm-2 -->
+				
+			</div><!-- End row -->
+		</div><!-- End container -->
+	</footer>
 		
 
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
